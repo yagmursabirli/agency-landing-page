@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    
+}
+.header{
+    background-image: url("images/desktop/image-header.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    
+}
+
+.about-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;
+    
+}
+
+#about, #services, #projects{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+#contact{
+    border-radius: 20px;
+    border-color: aliceblue;
+    font-weight: bold;
+    border-width: 0;
+    padding: 10px 20px;
+    font-size: 18px;    
+}
+
+.creatives{
+    text-align: center;
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 47px;
+    padding-top: 170px;
+    
+}
+
+.arrow-down{
+    align-self: center;
+}
+
+.secPart, .thirdPart{
+    display: flex;
+    height: 100vh;
+}
+.transform{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 50%;
+    padding: 0px;
+    background-color: antiquewhite;
+    text-align: left;
+}
+#learnMore{
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.longText, .stand-out-text{
+    text-align: left; 
+}
+
+.titleOflearnMore, .title-stand-out{
+    text-align: left;
+    font-size: 45px;
+    font-weight: bold;
+}
+.egg-photo, .stand-out-photo{
+    
+    width: 50%;
+}
+
+.egg-photo img, .stand-out-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fourthPart{
+
+    display: flex;
+    height: 77vh;
+}
+
+.cherry{
+    width: 50%;
+    background-image: url("images/desktop/image-graphic-design.jpg");
+    height: 100%;
+    background-size: cover;            
+  background-position: center center; 
+  background-repeat: no-repeat;
+  position: relative;
+}
+.orange{
+    width: 50%;
+    background-image: url("images/desktop/image-photography.jpg");
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;            
+  background-position: center center; 
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+
+.cherry-title, .orange-title{
+    text-align: center;
+    padding-top: 400px;
+
+}
+
+.cherry-text, .orange-text{
+    text-align: center;
+    font-size: 19px;
+    
+}
