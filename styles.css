@@ -1,6 +1,11 @@
-body{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
     margin: 0;
-    
+    padding: 0;
 }
 .header{
     background-image: url("images/desktop/image-header.jpg");
@@ -100,6 +105,8 @@ body{
 
     display: flex;
     height: 77vh;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .cherry{
@@ -120,6 +127,7 @@ body{
   background-position: center center; 
   background-repeat: no-repeat;
   position: relative;
+  
 }
 
 
@@ -134,4 +142,19 @@ body{
     text-align: center;
     font-size: 19px;
     
+}
+.client{
+    background-color: rgb(202, 187, 167);
+    padding-top: 0px;
+    margin: 0px;
+}
+
+.titleOfClients{
+    text-align: center;
+    padding: 0px ;
+    margin: 0px, 0px;
+    margin-block-end: 0px;
+    color: rgb(108, 104, 97);
+    font-size: 20px;
+    font-weight: bold;
 }
