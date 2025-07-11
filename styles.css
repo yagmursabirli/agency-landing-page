@@ -7,6 +7,7 @@ html, body{
     margin: 0;
     padding: 0;
 }
+/* header*/
 .header{
     background-image: url("images/desktop/image-header.jpg");
     background-size: cover;
@@ -43,14 +44,16 @@ html, body{
     font-weight: bold;
     border-width: 0;
     padding: 10px 20px;
-    font-size: 18px;    
+    font-size: 18px; 
+    cursor: pointer;   
 }
 
 .creatives{
     text-align: center;
     color: aliceblue;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 47px;
+    
+    font-size: 57px;
+    font-weight: lighter;
     padding-top: 170px;
     
 }
@@ -59,37 +62,75 @@ html, body{
     align-self: center;
 }
 
+/* sec and third part*/
 .secPart, .thirdPart{
     display: flex;
     height: 100vh;
 }
-.transform{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: aliceblue;
-    width: 50%;
-    padding: 0px;
-    background-color: antiquewhite;
-    text-align: left;
+.transform {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;       /* dikeyde ortala */
+  align-items: center;           /* yatayda ortala */
+  background-color: antiquewhite;
 }
-#learnMore{
+
+.content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;       
+  max-width: 500px;
+}
+
+
+#learnMore1{
     text-align: left;
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: linear-gradient(to top, #fef08a 0%, #fef08a 35%, transparent 35%);
+    padding: 0 4px;
+    
+
+}
+#learnMore2{
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    background: linear-gradient(to top, #fe998a 0%, #dba6a6 35%, transparent 35%);
+     padding: 0 4px;
+    text-decoration: none;
+
 }
 
 .longText, .stand-out-text{
     text-align: left; 
+    font-family: 'Barlow', sans-serif;
+     font-weight: 500;
+     color: #5d5d66;
+    padding-bottom: 10px;
+    max-width: 500px;
 }
 
 .titleOflearnMore, .title-stand-out{
     text-align: left;
     font-size: 45px;
     font-weight: bold;
+    font-family: 'Fraunces', serif;
+    padding-bottom: 15px;
 }
+
 .egg-photo, .stand-out-photo{
     
     width: 50%;
@@ -101,6 +142,7 @@ html, body{
     object-fit: cover;
 }
 
+/*cherry and orange*/
 .fourthPart{
 
     display: flex;
@@ -108,6 +150,8 @@ html, body{
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
+
+
 
 .cherry{
     width: 50%;
@@ -117,6 +161,7 @@ html, body{
   background-position: center center; 
   background-repeat: no-repeat;
   position: relative;
+ 
 }
 .orange{
     width: 50%;
@@ -128,33 +173,152 @@ html, body{
   background-repeat: no-repeat;
   position: relative;
   
+  
 }
-
-
+.cherry-content, .orange-content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  text-align: center;
+  color: black;
+}
 
 .cherry-title, .orange-title{
     text-align: center;
-    padding-top: 400px;
+    padding-top: 370px;
+    padding-bottom: 15px;
 
 }
 
 .cherry-text, .orange-text{
     text-align: center;
-    font-size: 19px;
+    font-size: 16px;
+    text-transform: none;
+   
     
 }
+
+/*reviews part*/
 .client{
-    background-color: rgb(202, 187, 167);
+    background-color: rgb(240, 237, 234);
     padding-top: 0px;
     margin: 0px;
 }
 
-.titleOfClients{
+.title{
     text-align: center;
     padding: 0px ;
-    margin: 0px, 0px;
+   padding-top: 120px;
     margin-block-end: 0px;
-    color: rgb(108, 104, 97);
-    font-size: 20px;
+    color: rgb(181, 178, 173);
+    font-size: 40px;
     font-weight: bold;
+}
+
+.testimonial-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.photos-and-revs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 450px;
+}
+
+
+.profile-picture{
+    border-radius: 50%;
+     width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.client-text{
+    font-size: 21px;
+    padding-bottom: 35px;
+    color: rgb(64, 63, 63);
+}
+
+.client-name{
+    font-weight: bold;
+     padding-top: 25px;
+}
+
+.client-position{
+    font-size: 14px;
+    color: rgb(139, 129, 121);
+    margin-bottom: 50px;
+}
+
+.person {
+  margin-top: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* 4 photo row*/
+.photos-row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.photos{
+    width: 25%;
+    height: auto;
+    display: block;
+}
+
+/*bottom part*/ 
+.bottom-part{
+   
+    background-color: rgb(103, 232, 195);
+    text-align: center;
+    align-items: center;
+
+}
+.sunnyside{
+    padding-top: 45px;
+    margin-bottom: 13px;
+}
+
+.about-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
+
+
+.social-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 30px;
+   
+}
+
+#about2, #services2, #projects2{
+    text-decoration: none;
+    text-align: center;
+    color:rgb(13, 132, 112);
+    font-size: 18px;
+    padding-bottom: 30px;
+    padding-top: 25px;
+    font-weight: bold;
+    
 }
